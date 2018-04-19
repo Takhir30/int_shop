@@ -58,10 +58,33 @@ transform: translateX(-50%);
   margin-top: 50px;
   color: white;
 }
+
 .product-description-tabs{
   padding: 10px;
 }
+
 .product-image-item{
   padding: 5px;
   margin-bottom: 5px;
+}
+
+.navbar-top{
+  background-color: #e4e2e2;
+  min-height: 20px;
+  border: none;
+}
+
+.basket-container{
+  position: relative;
+  width: 300px;
+  padding: 15px 10px;
+}
+
+.basket-items{
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 10;
+  padding: 10px;
+  background-color:#e4e2e2;
 }

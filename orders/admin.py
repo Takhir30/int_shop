@@ -8,7 +8,7 @@ class ProductInOrderInline(admin.TabularInline):
 
 
 class StatusAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in Status._meta.fields][::-1]
+    list_display = [field.name for field in Status._meta.fields]
 
     class Meta:
         model = Status
@@ -18,7 +18,7 @@ admin.site.register(Status, StatusAdmin)
 
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in Order._meta.fields][::-1]
+    list_display = [field.name for field in Order._meta.fields]
     inlies = [ProductInOrderInline]
 
     class Meta:
@@ -29,7 +29,7 @@ admin.site.register(Order, OrderAdmin)
 
 
 class ProductInOrderAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in ProductInOrder._meta.fields][::-1]
+    list_display = [field.name for field in ProductInOrder._meta.fields]
 
     class Meta:
         model = ProductInOrder
@@ -39,7 +39,7 @@ admin.site.register(ProductInOrder, ProductInOrderAdmin)
 
 
 class ProductInBasketAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in ProductInBasket._meta.fields][::-1]
+    list_display = [field.name for field in ProductInBasket._meta.fields]
 
     class Meta:
         model = ProductInBasket
